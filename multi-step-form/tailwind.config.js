@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -18,38 +18,17 @@ module.exports = {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+        p: {
+          "marine-blue": "hsl(var(--p-marine-blue))",
+          "purplish-blue": "hsl(var(--p-purplish-blue))",
+          "pastel-blue": "hsl(var(--p-pastel-blue))",
+          "light-blue": "hsl(var(--p-light-blue))",
+          "strawberry-red": "hsl(var(--p-strawberry-red))",
+          "cool-gray": "hsl(var(--p-cool-gray))",
+          "light-gray": "hsl(var(--p-light-gray))",
+          magnolia: "hsl(var(--p-magnolia))",
+          alabaster: "hsl(var(--p-alabaster))",
+          white: "hsl(var(--p-white))",
         },
       },
       borderRadius: {
@@ -71,7 +50,10 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontFamily: {
+        ubuntu: ["Ubuntu", "sans-serif"],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
